@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+	     <script src="jquery-1.12.4.min.js"></script>
+	     <script src="jquery-1.4.1.min.js"></script>
+
+    <title>AJAX</title>
+</head>
+<body>
+
+<span id="ajax_test">Click me!</span> <br>
+
+<script>
+
+	 $('#ajax_test').click(function() {
+	     $.get('#script.php', function(data) {
+		     $('body').append(data);
+			 });
+	 });
+	 $(document).ready(function() {
+	 $("#ajax_test").click(function() {
+		 alert("Ответ: PHP - серверный язык, для него нужен интерпритатор. Запускать PHP-код надо через сервер");
+		 });
+	 }); 
+</script>
+</body>
+</html>
