@@ -1,14 +1,25 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Самостоятельная работа</title>
-	<script type="text/javascript">  
-		 var myArray = [1, 2, 3, 4, 5];
-         alert(myArray.slice(3, 5));
-	</script>
+   <title>Самостоятельная работа</title>
 </head>
 <body>
 
+<p>Есть массив [1,2,3,4,5]. Используя функцию slice записать в новый массив элементы [4,5].</p>
+
+<button onclick="myFunction()">Нажмите на кнопку</button>
+
+<p id="record"></p>
+
+<script>
+var myArray = [1,2,3,4,5];
+document.getElementById("record").innerHTML = myArray;
+
+function myFunction() {
+  var myArray1 = myArray.slice(3,5);
+		document.getElementById("record").innerHTML = myArray1;
+}
+</script>
 
 </body>
 </html>
