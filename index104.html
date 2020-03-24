@@ -2,16 +2,22 @@
 <html>
 <head>
     <title>Самостоятельная работа</title>
-	<script type="text/javascript">  
-		 var myArray = [1, 2, 3, 4, 5];
-		 myArray.splice(0, 1);
-		 myArray.splice(3, 1);
-         alert(myArray);
-		 
-	</script>
-</head>
-<body>
+	<p>Используя функцию splice преобразовать массив из [1,2,3,4,5] в [2,3,4].</p>
 
+<button onclick="myFunction()">Нажмите на кнопку</button>
+
+<p id="record"></p>
+
+<script>
+var myArray = [1,2,3,4,5];
+document.getElementById("record").innerHTML = myArray;
+
+function myFunction() {
+  myArray.splice(4, 1);
+  myArray.splice(0, 1);
+  document.getElementById("record").innerHTML = myArray;
+}
+</script>
 
 </body>
 </html>
